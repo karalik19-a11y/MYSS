@@ -10,7 +10,9 @@ services:
     runtime: node
     plan: free
     region: frankfurt
-    buildCommand: npm ci && npm run build
+    # NODE_ENV=production заставляет npm пропускать devDependencies,
+    # а tailwindcss, postcss и typescript нужны именно на сборке.
+    buildCommand: npm ci --include=dev && npm run build
     startCommand: npm run start:migrate
     healthCheckPath: /api/health
     autoDeploy: true
