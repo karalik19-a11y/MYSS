@@ -1,0 +1,566 @@
+// MYSS — Make Yourself Super Smart
+// Библиотека практического опыта выдающихся людей.
+
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// ENUMS
+// ============================================================
+
+enum ContentStatus {
+  draft
+  review
+  verified
+  published
+}
+
+enum Confidence {
+  high
+  medium
+  low
+}
+
+enum SourceType {
+  interview
+  book
+  official_site
+  talk
+  podcast
+  documentary
+  article
+  archive
+  academic
+  public_profile
+  other
+}
+
+enum Reliability {
+  high
+  medium
+  low
+}
+
+enum SectionKind {
+  summary // Если коротко
+  interesting // Вот что интересно
+  how // Как он это делал
+  principles // Правила
+  habits // Привычки
+  thinking // Мышление
+  cases // Кейсы
+  mistakes // Ошибки
+  quotes // Цитаты
+  takeaways // Что я бы забрал себе
+  today // Попробуй сегодня
+}
+
+enum FavoriteKind {
+  person
+  quote
+  case_study
+  principle
+}
+
+enum Era {
+  ancient
+  medieval
+  early_modern
+  modern // XIX — начало XX
+  contemporary // XX–XXI
+}
+
+// ============================================================
+// ПОЛЬЗОВАТЕЛИ (identity = Telegram)
+// ============================================================
+
+model User {
+  id            String   @id @default(cuid())
+  telegramId    BigInt   @unique
+  username      String?
+  firstName     String?
+  lastName      String?
+  photoUrl      String?
+  languageCode  String?
+  isAdmin       Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  lastSeenAt    DateTime @default(now())
+
+  progress          UserProgress[]
+  completedSections UserCompletedSection[]
+  favorites         Favorite[]
+  routines          DailyRoutine[]
+  interests         UserInterest[]
+  events            UsageEvent[]
+
+  @@index([telegramId])
+  @@map("users")
+}
+
+model UserInterest {
+  id         String   @id @default(cuid())
+  userId     String
+  categoryId String
+  weight     Int      @default(1)
+  updatedAt  DateTime @updatedAt
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, categoryId])
+  @@index([userId])
+  @@map("user_interests")
+}
+
+// ============================================================
+// ЛЮДИ И КАТЕГОРИИ
+// ============================================================
+
+model Person {
+  id          String        @id @default(cuid())
+  slug        String        @unique
+  name        String
+  displayName String
+  role        String // основная роль/профессия
+  descriptor  String? // короткая сильная характеристика
+  country     String
+  region      String? // географический макрорегион
+  era         Era           @default(contemporary)
+  birthYear   Int?
+  deathYear   Int?
+  shortBio    String? // 1-2 предложения для карточки
+  status      ContentStatus @default(draft)
+  confidence  Confidence    @default(medium)
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  // Изображение
+  imageUrl    String?
+  imageSource String?
+  imageCredit String?
+  imageAlt    String?
+  imageWidth  Int?
+  imageHeight Int?
+
+  // Поисковый вектор (денормализованная строка для быстрых ILIKE-запросов)
+  searchText String @default("")
+
+  categories PersonCategory[]
+  course     Course?
+  facts      Fact[]
+  principles Principle[]
+  habits     Habit[]
+  quotes     Quote[]
+  cases      CaseStudy[]
+  mistakes   Mistake[]
+  sources    Source[]
+  claims     Claim[]
+  progress   UserProgress[]
+  favorites  Favorite[]
+  routines   DailyRoutine[]
+  events     UsageEvent[]
+
+  recommendedBy Recommendation[] @relation("RecFrom")
+  recommends    Recommendation[] @relation("RecTo")
+
+  @@index([slug])
+  @@index([name])
+  @@index([country])
+  @@index([status])
+  @@index([era])
+  @@map("people")
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String?
+  accent      String? // цветовой акцент в UI
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  people    PersonCategory[]
+  interests UserInterest[]
+
+  @@index([slug])
+  @@map("categories")
+}
+
+model PersonCategory {
+  personId   String
+  categoryId String
+  isPrimary  Boolean @default(false)
+
+  person   Person   @relation(fields: [personId], references: [id], onDelete: Cascade)
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+
+  @@id([personId, categoryId])
+  @@index([categoryId])
+  @@index([personId])
+  @@map("person_categories")
+}
+
+// ============================================================
+// КУРС
+// ============================================================
+
+model Course {
+  id        String   @id @default(cuid())
+  personId  String   @unique
+  intro     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  person   Person          @relation(fields: [personId], references: [id], onDelete: Cascade)
+  sections CourseSection[]
+
+  @@map("courses")
+}
+
+model CourseSection {
+  id        String        @id @default(cuid())
+  courseId  String
+  kind      SectionKind
+  title     String
+  subtitle  String?
+  body      String? // основной текст (markdown-lite)
+  sortOrder Int           @default(0)
+  status    ContentStatus @default(draft)
+
+  course            Course                 @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  completedSections UserCompletedSection[]
+
+  @@unique([courseId, kind])
+  @@index([courseId])
+  @@map("course_sections")
+}
+
+// ============================================================
+// ЕДИНИЦЫ КОНТЕНТА
+// ============================================================
+
+model Fact {
+  id         String        @id @default(cuid())
+  personId   String
+  text       String
+  context    String?
+  sortOrder  Int           @default(0)
+  status     ContentStatus @default(draft)
+  confidence Confidence    @default(medium)
+
+  person  Person  @relation(fields: [personId], references: [id], onDelete: Cascade)
+  claim   Claim?  @relation(fields: [claimId], references: [id])
+  claimId String?
+
+  @@index([personId])
+  @@map("facts")
+}
+
+model Principle {
+  id          String        @id @default(cuid())
+  personId    String
+  title       String
+  explanation String?
+  sortOrder   Int           @default(0)
+  status      ContentStatus @default(draft)
+  confidence  Confidence    @default(medium)
+
+  person    Person     @relation(fields: [personId], references: [id], onDelete: Cascade)
+  claim     Claim?     @relation(fields: [claimId], references: [id])
+  claimId   String?
+  favorites Favorite[]
+
+  @@index([personId])
+  @@map("principles")
+}
+
+model Habit {
+  id          String        @id @default(cuid())
+  personId    String
+  title       String
+  description String?
+  // Принцип, извлекаемый из привычки — используется в «Мой день».
+  principleTag String? // early_start | deep_work | movement | no_distraction | planning | reading | reflection | rest | social | craft
+  timeOfDay   String? // morning | midday | evening | any
+  durationMin Int?
+  sortOrder   Int           @default(0)
+  status      ContentStatus @default(draft)
+  confidence  Confidence    @default(medium)
+
+  person       Person        @relation(fields: [personId], references: [id], onDelete: Cascade)
+  claim        Claim?        @relation(fields: [claimId], references: [id])
+  claimId      String?
+  routineItems RoutineItem[]
+
+  @@index([personId])
+  @@map("habits")
+}
+
+model Quote {
+  id         String        @id @default(cuid())
+  personId   String
+  text       String
+  context    String?
+  isVerbatim Boolean       @default(true) // false => пересказ, выводить без кавычек
+  sortOrder  Int           @default(0)
+  status     ContentStatus @default(draft)
+  confidence Confidence    @default(medium)
+
+  person    Person     @relation(fields: [personId], references: [id], onDelete: Cascade)
+  source    Source?    @relation(fields: [sourceId], references: [id])
+  sourceId  String?
+  claim     Claim?     @relation(fields: [claimId], references: [id])
+  claimId   String?
+  favorites Favorite[]
+
+  @@index([personId])
+  @@map("quotes")
+}
+
+model CaseStudy {
+  id         String        @id @default(cuid())
+  personId   String
+  title      String
+  situation  String
+  decision   String
+  result     String
+  lesson     String
+  year       Int?
+  sortOrder  Int           @default(0)
+  status     ContentStatus @default(draft)
+  confidence Confidence    @default(medium)
+
+  person    Person     @relation(fields: [personId], references: [id], onDelete: Cascade)
+  claim     Claim?     @relation(fields: [claimId], references: [id])
+  claimId   String?
+  favorites Favorite[]
+
+  @@index([personId])
+  @@map("cases")
+}
+
+model Mistake {
+  id          String        @id @default(cuid())
+  personId    String
+  title       String
+  description String
+  consequence String?
+  lesson      String?
+  sortOrder   Int           @default(0)
+  status      ContentStatus @default(draft)
+  confidence  Confidence    @default(medium)
+
+  person  Person  @relation(fields: [personId], references: [id], onDelete: Cascade)
+  claim   Claim?  @relation(fields: [claimId], references: [id])
+  claimId String?
+
+  @@index([personId])
+  @@map("mistakes")
+}
+
+model Recommendation {
+  id       String @id @default(cuid())
+  fromId   String
+  toId     String
+  reason   String?
+  weight   Int    @default(1)
+
+  from Person @relation("RecFrom", fields: [fromId], references: [id], onDelete: Cascade)
+  to   Person @relation("RecTo", fields: [toId], references: [id], onDelete: Cascade)
+
+  @@unique([fromId, toId])
+  @@index([fromId])
+  @@map("recommendations")
+}
+
+// ============================================================
+// ИСТОЧНИКИ И CLAIMS
+// ============================================================
+
+model Source {
+  id          String      @id @default(cuid())
+  personId    String?
+  title       String
+  author      String?
+  publisher   String?
+  url         String?
+  publishedAt String? // строкой: даты источников часто неполные
+  type        SourceType  @default(other)
+  accessedAt  DateTime?
+  notes       String?
+  reliability Reliability @default(medium)
+  createdAt   DateTime    @default(now())
+
+  person Person?      @relation(fields: [personId], references: [id], onDelete: Cascade)
+  claims ClaimSource[]
+  quotes Quote[]
+
+  @@index([personId])
+  @@map("sources")
+}
+
+model Claim {
+  id         String        @id @default(cuid())
+  personId   String
+  text       String
+  status     ContentStatus @default(draft)
+  confidence Confidence    @default(medium)
+  notes      String?
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+
+  person     Person        @relation(fields: [personId], references: [id], onDelete: Cascade)
+  sources    ClaimSource[]
+  facts      Fact[]
+  principles Principle[]
+  habits     Habit[]
+  quotes     Quote[]
+  cases      CaseStudy[]
+  mistakes   Mistake[]
+
+  @@index([personId])
+  @@index([status])
+  @@map("claims")
+}
+
+model ClaimSource {
+  claimId  String
+  sourceId String
+
+  claim  Claim  @relation(fields: [claimId], references: [id], onDelete: Cascade)
+  source Source @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@id([claimId, sourceId])
+  @@map("claim_sources")
+}
+
+// ============================================================
+// ПРОГРЕСС И СОХРАНЁННОЕ
+// ============================================================
+
+model UserProgress {
+  id          String    @id @default(cuid())
+  userId      String
+  personId    String
+  percent     Int       @default(0)
+  startedAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  completedAt DateTime?
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  person Person @relation(fields: [personId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, personId])
+  @@index([userId])
+  @@index([personId])
+  @@map("user_progress")
+}
+
+model UserCompletedSection {
+  id          String   @id @default(cuid())
+  userId      String
+  sectionId   String
+  completedAt DateTime @default(now())
+
+  user    User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  section CourseSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sectionId])
+  @@index([userId])
+  @@map("user_completed_sections")
+}
+
+model Favorite {
+  id        String       @id @default(cuid())
+  userId    String
+  kind      FavoriteKind
+  createdAt DateTime     @default(now())
+
+  personId    String?
+  quoteId     String?
+  caseId      String?
+  principleId String?
+
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  person    Person?    @relation(fields: [personId], references: [id], onDelete: Cascade)
+  quote     Quote?     @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  caseStudy CaseStudy? @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  principle Principle? @relation(fields: [principleId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, kind, personId, quoteId, caseId, principleId])
+  @@index([userId])
+  @@map("favorites")
+}
+
+// ============================================================
+// «МОЙ ДЕНЬ»
+// ============================================================
+
+model DailyRoutine {
+  id        String   @id @default(cuid())
+  userId    String
+  personId  String
+  title     String
+  // Входные ограничения пользователя (снимок на момент генерации)
+  wakeTime  String
+  sleepTime String
+  constraints Json
+  createdAt DateTime @default(now())
+
+  user   User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  person Person        @relation(fields: [personId], references: [id], onDelete: Cascade)
+  items  RoutineItem[]
+
+  @@index([userId])
+  @@map("daily_routines")
+}
+
+model RoutineItem {
+  id        String  @id @default(cuid())
+  routineId String
+  startTime String
+  endTime   String
+  title     String
+  detail    String?
+  // Прозрачность происхождения: §20
+  ideaSource     String? // «Источник идеи»
+  whyThisPerson  String? // «Почему это связано с выбранным человеком»
+  howAdapted     String? // «Как это адаптировано под тебя»
+  sortOrder      Int     @default(0)
+
+  routine DailyRoutine @relation(fields: [routineId], references: [id], onDelete: Cascade)
+  habit   Habit?       @relation(fields: [habitId], references: [id])
+  habitId String?
+
+  @@index([routineId])
+  @@map("routine_items")
+}
+
+// ============================================================
+// РЕАЛЬНАЯ АНАЛИТИКА (никаких fake popularity)
+// ============================================================
+
+model UsageEvent {
+  id        String   @id @default(cuid())
+  userId    String?
+  personId  String?
+  type      String // person_view | section_complete | favorite | routine_generate
+  createdAt DateTime @default(now())
+
+  user   User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+  person Person? @relation(fields: [personId], references: [id], onDelete: Cascade)
+
+  @@index([personId, createdAt])
+  @@index([type, createdAt])
+  @@map("usage_events")
+}

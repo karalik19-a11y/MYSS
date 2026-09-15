@@ -1,0 +1,522 @@
+# MYSS master list — реальные люди для постепенного обогащения контентом.
+# Поля фактические и проверяемые: имя, роль, страна, годы жизни.
+# Профиль публикуется только после наполнения курса и проверки источников.
+# slug	name	role	country	region	era	categories	birthYear	deathYear
+steve-jobs	Стив Джобс	Сооснователь Apple	США	Северная Америка	contemporary	technology,entrepreneurship,design	1955	2011
+elon-musk	Илон Маск	Предприниматель, основатель SpaceX и Tesla	США	Северная Америка	contemporary	entrepreneurship,technology,innovation	1971	
+jeff-bezos	Джефф Безос	Основатель Amazon	США	Северная Америка	contemporary	business,entrepreneurship,strategy	1964	
+bill-gates	Билл Гейтс	Сооснователь Microsoft	США	Северная Америка	contemporary	technology,business,entrepreneurship	1955	
+warren-buffett	Уоррен Баффет	Инвестор, глава Berkshire Hathaway	США	Северная Америка	contemporary	finance,business,strategy	1930	
+charlie-munger	Чарли Мангер	Инвестор, вице-председатель Berkshire Hathaway	США	Северная Америка	contemporary	finance,thought,strategy	1924	2023
+ray-dalio	Рэй Далио	Основатель Bridgewater Associates	США	Северная Америка	contemporary	finance,strategy	1949	
+peter-thiel	Питер Тиль	Инвестор, сооснователь PayPal	США	Северная Америка	contemporary	finance,entrepreneurship,strategy	1967	
+reid-hoffman	Рид Хоффман	Сооснователь LinkedIn, инвестор	США	Северная Америка	contemporary	entrepreneurship,technology	1967	
+marc-andreessen	Марк Андриссен	Создатель Netscape, венчурный инвестор	США	Северная Америка	contemporary	technology,finance	1971	
+paul-graham	Пол Грэм	Сооснователь Y Combinator, эссеист	США	Северная Америка	contemporary	entrepreneurship,technology,thought	1964	
+sam-altman	Сэм Альтман	Предприниматель, руководитель OpenAI	США	Северная Америка	contemporary	technology,entrepreneurship	1985	
+jensen-huang	Дженсен Хуанг	Основатель NVIDIA	США	Северная Америка	contemporary	technology,business	1963	
+satya-nadella	Сатья Наделла	Глава Microsoft	США	Северная Америка	contemporary	business,technology	1967	
+tim-cook	Тим Кук	Глава Apple	США	Северная Америка	contemporary	business,strategy	1960	
+andy-grove	Энди Гроув	Глава Intel, автор «High Output Management»	США	Северная Америка	contemporary	business,strategy,technology	1936	2016
+gordon-moore	Гордон Мур	Сооснователь Intel	США	Северная Америка	contemporary	technology,science	1929	2023
+robert-noyce	Роберт Нойс	Сооснователь Intel, соавтор интегральной схемы	США	Северная Америка	contemporary	technology,innovation	1927	1990
+steve-wozniak	Стив Возняк	Сооснователь Apple, инженер	США	Северная Америка	contemporary	technology,innovation	1950	
+larry-page	Ларри Пейдж	Сооснователь Google	США	Северная Америка	contemporary	technology,entrepreneurship	1973	
+sergey-brin	Сергей Брин	Сооснователь Google	США	Северная Америка	contemporary	technology,entrepreneurship	1973	
+eric-schmidt	Эрик Шмидт	Руководитель Google	США	Северная Америка	contemporary	business,technology	1955	
+sheryl-sandberg	Шерил Сэндберг	Операционный директор Facebook	США	Северная Америка	contemporary	business,media	1969	
+mark-zuckerberg	Марк Цукерберг	Основатель Facebook	США	Северная Америка	contemporary	technology,entrepreneurship	1984	
+reed-hastings	Рид Хастингс	Сооснователь Netflix	США	Северная Америка	contemporary	business,media,strategy	1960	
+brian-chesky	Брайан Чески	Сооснователь Airbnb	США	Северная Америка	contemporary	entrepreneurship,design	1981	
+travis-kalanick	Трэвис Каланик	Сооснователь Uber	США	Северная Америка	contemporary	entrepreneurship,business	1976	
+jack-dorsey	Джек Дорси	Сооснователь Twitter и Square	США	Северная Америка	contemporary	technology,entrepreneurship	1976	
+evan-spiegel	Эван Шпигель	Сооснователь Snap	США	Северная Америка	contemporary	entrepreneurship,media	1990	
+drew-houston	Дрю Хьюстон	Основатель Dropbox	США	Северная Америка	contemporary	entrepreneurship,technology	1983	
+patrick-collison	Патрик Коллисон	Сооснователь Stripe	Ирландия	Западная Европа	contemporary	entrepreneurship,technology	1988	
+john-collison	Джон Коллисон	Сооснователь Stripe	Ирландия	Западная Европа	contemporary	entrepreneurship,technology	1990	
+daniel-ek	Даниэль Эк	Основатель Spotify	Швеция	Скандинавия	contemporary	entrepreneurship,music,technology	1983	
+jan-koum	Ян Кум	Сооснователь WhatsApp	США	Северная Америка	contemporary	technology,entrepreneurship	1976	
+pavel-durov	Павел Дуров	Основатель Telegram и «ВКонтакте»	Россия	Восточная Европа	contemporary	technology,entrepreneurship	1984	
+arkady-volozh	Аркадий Волож	Сооснователь «Яндекса»	Россия	Восточная Европа	contemporary	technology,entrepreneurship	1964	
+sergey-galitsky	Сергей Галицкий	Основатель «Магнита»	Россия	Восточная Европа	contemporary	business,entrepreneurship	1967	
+oleg-tinkov	Олег Тиньков	Предприниматель, основатель банка	Россия	Восточная Европа	contemporary	entrepreneurship,finance	1967	
+evgeny-kaspersky	Евгений Касперский	Основатель «Лаборатории Касперского»	Россия	Восточная Европа	contemporary	technology,business	1965	
+david-yan	Давид Ян	Основатель ABBYY	Россия	Восточная Европа	contemporary	technology,entrepreneurship	1968	
+jack-ma	Джек Ма	Основатель Alibaba	Китай	Восточная Азия	contemporary	entrepreneurship,business	1964	
+pony-ma	Ма Хуатэн	Основатель Tencent	Китай	Восточная Азия	contemporary	technology,business	1971	
+ren-zhengfei	Жэнь Чжэнфэй	Основатель Huawei	Китай	Восточная Азия	contemporary	business,technology,strategy	1944	
+lei-jun	Лэй Цзюнь	Основатель Xiaomi	Китай	Восточная Азия	contemporary	technology,entrepreneurship	1969	
+zhang-yiming	Чжан Идун	Основатель ByteDance	Китай	Восточная Азия	contemporary	technology,entrepreneurship	1983	
+robin-li	Робин Ли	Основатель Baidu	Китай	Восточная Азия	contemporary	technology,entrepreneurship	1968	
+akio-morita	Акио Морита	Сооснователь Sony	Япония	Восточная Азия	contemporary	business,innovation	1921	1999
+masaru-ibuka	Масару Ибука	Сооснователь Sony	Япония	Восточная Азия	contemporary	technology,innovation	1908	1997
+konosuke-matsushita	Коносукэ Мацусита	Основатель Panasonic	Япония	Восточная Азия	contemporary	business,thought	1894	1989
+soichiro-honda	Соитиро Хонда	Основатель Honda	Япония	Восточная Азия	contemporary	business,innovation	1906	1991
+kazuo-inamori	Кадзуо Инамори	Основатель Kyocera, спасатель JAL	Япония	Восточная Азия	contemporary	business,thought,strategy	1932	2022
+taiichi-ohno	Тайити Оно	Создатель производственной системы Toyota	Япония	Восточная Азия	contemporary	business,innovation,strategy	1912	1990
+masayoshi-son	Масаёси Сон	Основатель SoftBank	Япония	Восточная Азия	contemporary	finance,entrepreneurship	1957	
+tadashi-yanai	Тадаси Янаи	Основатель Uniqlo	Япония	Восточная Азия	contemporary	business,entrepreneurship	1949	
+lee-byung-chul	Ли Бён Чхоль	Основатель Samsung	Южная Корея	Восточная Азия	contemporary	business,entrepreneurship	1910	1987
+chung-ju-yung	Чон Чжу Ён	Основатель Hyundai	Южная Корея	Восточная Азия	contemporary	business,entrepreneurship	1915	2001
+ratan-tata	Ратан Тата	Глава Tata Group	Индия	Южная Азия	contemporary	business,strategy	1937	2024
+narayana-murthy	Нараяна Мурти	Основатель Infosys	Индия	Южная Азия	contemporary	business,technology	1946	
+dhirubhai-ambani	Дхирубхай Амбани	Основатель Reliance	Индия	Южная Азия	contemporary	entrepreneurship,business	1932	2002
+sundar-pichai	Сундар Пичаи	Глава Google	Индия	Южная Азия	contemporary	business,technology	1972	
+jorge-paulo-lemann	Жоржи Паулу Леманн	Инвестор, сооснователь 3G Capital	Бразилия	Латинская Америка	contemporary	finance,business	1939	
+carlos-slim	Карлос Слим	Предприниматель и инвестор	Мексика	Латинская Америка	contemporary	finance,business	1940	
+ingvar-kamprad	Ингвар Кампрад	Основатель IKEA	Швеция	Скандинавия	contemporary	business,design	1926	2018
+richard-branson	Ричард Брэнсон	Основатель Virgin Group	Великобритания	Западная Европа	contemporary	entrepreneurship,business	1950	
+james-dyson	Джеймс Дайсон	Изобретатель, основатель Dyson	Великобритания	Западная Европа	contemporary	design,innovation,entrepreneurship	1947	
+anita-roddick	Анита Роддик	Основательница The Body Shop	Великобритания	Западная Европа	contemporary	entrepreneurship,business	1942	2007
+bernard-arnault	Бернар Арно	Глава LVMH	Франция	Западная Европа	contemporary	business,strategy	1949	
+amancio-ortega	Амансио Ортега	Основатель Zara	Испания	Западная Европа	contemporary	business,strategy	1936	
+giorgio-armani	Джорджио Армани	Модельер, основатель дома Armani	Италия	Западная Европа	contemporary	design,business	1934	2025
+enzo-ferrari	Энцо Феррари	Основатель Ferrari	Италия	Западная Европа	contemporary	business,sport,innovation	1898	1988
+ferdinand-porsche	Фердинанд Порше	Инженер-конструктор	Германия	Западная Европа	contemporary	technology,innovation	1875	1951
+robert-bosch	Роберт Бош	Инженер, основатель Bosch	Германия	Западная Европа	modern	business,innovation	1861	1942
+henry-ford	Генри Форд	Основатель Ford Motor Company	США	Северная Америка	modern	business,innovation	1863	1947
+walt-disney	Уолт Дисней	Основатель Disney	США	Северная Америка	contemporary	cinema,business,art	1901	1966
+ray-kroc	Рэй Крок	Построил сеть McDonald's	США	Северная Америка	contemporary	business,strategy	1902	1984
+sam-walton	Сэм Уолтон	Основатель Walmart	США	Северная Америка	contemporary	business,strategy	1918	1992
+estee-lauder	Эсте Лаудер	Основательница косметической компании	США	Северная Америка	contemporary	business,entrepreneurship	1908	2004
+coco-chanel	Коко Шанель	Модельер	Франция	Западная Европа	contemporary	design,art,business	1883	1971
+yves-saint-laurent	Ив Сен-Лоран	Модельер	Франция	Западная Европа	contemporary	design,art	1936	2008
+christian-dior	Кристиан Диор	Модельер	Франция	Западная Европа	contemporary	design,business	1905	1957
+virgil-abloh	Вирджил Абло	Дизайнер, основатель Off-White	США	Северная Америка	contemporary	design,art,content	1980	2021
+rei-kawakubo	Рей Кавакубо	Основательница Comme des Garçons	Япония	Восточная Азия	contemporary	design,art	1942	
+issey-miyake	Иссэй Миякэ	Модельер	Япония	Восточная Азия	contemporary	design,innovation	1938	2022
+dieter-rams	Дитер Рамс	Промышленный дизайнер Braun	Германия	Западная Европа	contemporary	design,thought	1932	
+jony-ive	Джони Айв	Дизайнер Apple	Великобритания	Западная Европа	contemporary	design,technology	1967	
+naoto-fukasawa	Наото Фукасава	Промышленный дизайнер	Япония	Восточная Азия	contemporary	design	1956	
+paul-rand	Пол Рэнд	Графический дизайнер	США	Северная Америка	contemporary	design,art	1914	1996
+massimo-vignelli	Массимо Виньелли	Графический дизайнер	Италия	Западная Европа	contemporary	design	1931	2014
+saul-bass	Сол Басс	Графический дизайнер, автор титров	США	Северная Америка	contemporary	design,cinema	1920	1996
+milton-glaser	Милтон Глейзер	Графический дизайнер	США	Северная Америка	contemporary	design,art	1929	2020
+charles-eames	Чарльз Имз	Дизайнер и архитектор	США	Северная Америка	contemporary	design,architecture	1907	1978
+ray-eames	Рэй Имз	Дизайнер	США	Северная Америка	contemporary	design,art	1912	1988
+frank-lloyd-wright	Фрэнк Ллойд Райт	Архитектор	США	Северная Америка	modern	architecture,design	1867	1959
+le-corbusier	Ле Корбюзье	Архитектор и теоретик	Швейцария	Западная Европа	contemporary	architecture,thought	1887	1965
+mies-van-der-rohe	Людвиг Мис ван дер Роэ	Архитектор	Германия	Западная Европа	contemporary	architecture,design	1886	1969
+zaha-hadid	Заха Хадид	Архитектор	Великобритания	Западная Европа	contemporary	architecture,design	1950	2016
+tadao-ando	Тадао Андо	Архитектор	Япония	Восточная Азия	contemporary	architecture,thought	1941	
+oscar-niemeyer	Оскар Нимейер	Архитектор	Бразилия	Латинская Америка	contemporary	architecture,art	1907	2012
+renzo-piano	Ренцо Пиано	Архитектор	Италия	Западная Европа	contemporary	architecture,design	1937	
+norman-foster	Норман Фостер	Архитектор	Великобритания	Западная Европа	contemporary	architecture,innovation	1935	
+antoni-gaudi	Антони Гауди	Архитектор	Испания	Западная Европа	modern	architecture,art	1852	1926
+alvar-aalto	Алвар Аалто	Архитектор и дизайнер	Финляндия	Скандинавия	contemporary	architecture,design	1898	1976
+albert-einstein	Альберт Эйнштейн	Физик-теоретик	Германия	Западная Европа	contemporary	science,thought	1879	1955
+marie-curie	Мария Склодовская-Кюри	Физик и химик	Польша	Восточная Европа	modern	science,innovation	1867	1934
+richard-feynman	Ричард Фейнман	Физик	США	Северная Америка	contemporary	science,thought	1918	1988
+niels-bohr	Нильс Бор	Физик	Дания	Скандинавия	contemporary	science,thought	1885	1962
+werner-heisenberg	Вернер Гейзенберг	Физик	Германия	Западная Европа	contemporary	science	1901	1976
+erwin-schrodinger	Эрвин Шрёдингер	Физик	Австрия	Западная Европа	contemporary	science	1887	1961
+paul-dirac	Поль Дирак	Физик	Великобритания	Западная Европа	contemporary	science	1902	1984
+max-planck	Макс Планк	Физик	Германия	Западная Европа	modern	science	1858	1947
+enrico-fermi	Энрико Ферми	Физик	Италия	Западная Европа	contemporary	science	1901	1954
+robert-oppenheimer	Роберт Оппенгеймер	Физик, руководитель Манхэттенского проекта	США	Северная Америка	contemporary	science,politics	1904	1967
+lev-landau	Лев Ландау	Физик-теоретик	СССР	Восточная Европа	contemporary	science	1908	1968
+pyotr-kapitsa	Пётр Капица	Физик	СССР	Восточная Европа	contemporary	science	1894	1984
+andrei-sakharov	Андрей Сахаров	Физик, правозащитник	СССР	Восточная Европа	contemporary	science,politics	1921	1989
+igor-kurchatov	Игорь Курчатов	Физик, руководитель атомного проекта	СССР	Восточная Европа	contemporary	science,strategy	1903	1960
+sergei-korolev	Сергей Королёв	Конструктор ракетно-космических систем	СССР	Восточная Европа	contemporary	technology,innovation,strategy	1907	1966
+konstantin-tsiolkovsky	Константин Циолковский	Теоретик космонавтики	Россия	Восточная Европа	modern	science,innovation	1857	1935
+yuri-gagarin	Юрий Гагарин	Первый человек в космосе	СССР	Восточная Европа	contemporary	science,sport	1934	1968
+wernher-von-braun	Вернер фон Браун	Конструктор ракет	Германия	Западная Европа	contemporary	technology,innovation	1912	1977
+neil-armstrong	Нил Армстронг	Астронавт	США	Северная Америка	contemporary	science	1930	2012
+katherine-johnson	Кэтрин Джонсон	Математик NASA	США	Северная Америка	contemporary	science	1918	2020
+alan-turing	Алан Тьюринг	Математик, основатель информатики	Великобритания	Западная Европа	contemporary	science,technology	1912	1954
+john-von-neumann	Джон фон Нейман	Математик	Венгрия	Восточная Европа	contemporary	science,strategy	1903	1957
+claude-shannon	Клод Шеннон	Основатель теории информации	США	Северная Америка	contemporary	science,innovation	1916	2001
+norbert-wiener	Норберт Винер	Основатель кибернетики	США	Северная Америка	contemporary	science,thought	1894	1964
+grace-hopper	Грейс Хоппер	Программист, создатель компилятора	США	Северная Америка	contemporary	technology,innovation	1906	1992
+ada-lovelace	Ада Лавлейс	Математик, первый программист	Великобритания	Западная Европа	modern	science,innovation	1815	1852
+charles-babbage	Чарльз Бэббидж	Изобретатель вычислительной машины	Великобритания	Западная Европа	modern	science,innovation	1791	1871
+donald-knuth	Дональд Кнут	Информатик, автор «Искусства программирования»	США	Северная Америка	contemporary	science,technology	1938	
+dennis-ritchie	Деннис Ритчи	Создатель языка C и Unix	США	Северная Америка	contemporary	technology,innovation	1941	2011
+ken-thompson	Кен Томпсон	Создатель Unix	США	Северная Америка	contemporary	technology,innovation	1943	
+linus-torvalds	Линус Торвальдс	Создатель Linux	Финляндия	Скандинавия	contemporary	technology,innovation	1969	
+tim-berners-lee	Тим Бернерс-Ли	Создатель World Wide Web	Великобритания	Западная Европа	contemporary	technology,innovation	1955	
+vint-cerf	Винтон Серф	Соавтор протоколов интернета	США	Северная Америка	contemporary	technology,innovation	1943	
+edsger-dijkstra	Эдсгер Дейкстра	Информатик	Нидерланды	Западная Европа	contemporary	science,thought	1930	2002
+alan-kay	Алан Кэй	Информатик, идеолог персонального компьютера	США	Северная Америка	contemporary	technology,thought	1940	
+douglas-engelbart	Дуглас Энгельбарт	Изобретатель мыши и интерфейсов	США	Северная Америка	contemporary	technology,innovation	1925	2013
+geoffrey-hinton	Джеффри Хинтон	Исследователь машинного обучения	Великобритания	Западная Европа	contemporary	science,technology	1947	
+yann-lecun	Ян Лекун	Исследователь машинного обучения	Франция	Западная Европа	contemporary	science,technology	1960	
+demis-hassabis	Демис Хассабис	Сооснователь DeepMind	Великобритания	Западная Европа	contemporary	science,technology	1976	
+andrey-kolmogorov	Андрей Колмогоров	Математик	СССР	Восточная Европа	contemporary	science	1903	1987
+grigori-perelman	Григорий Перельман	Математик	Россия	Восточная Европа	contemporary	science,thought	1966	
+srinivasa-ramanujan	Сриниваса Рамануджан	Математик	Индия	Южная Азия	modern	science	1887	1920
+david-hilbert	Давид Гильберт	Математик	Германия	Западная Европа	modern	science	1862	1943
+henri-poincare	Анри Пуанкаре	Математик и физик	Франция	Западная Европа	modern	science,thought	1854	1912
+kurt-godel	Курт Гёдель	Логик и математик	Австрия	Западная Европа	contemporary	science,thought	1906	1978
+emmy-noether	Эмми Нётер	Математик	Германия	Западная Европа	contemporary	science	1882	1935
+charles-darwin	Чарльз Дарвин	Естествоиспытатель	Великобритания	Западная Европа	modern	science,thought	1809	1882
+gregor-mendel	Грегор Мендель	Основатель генетики	Австрия	Восточная Европа	modern	science	1822	1884
+louis-pasteur	Луи Пастер	Микробиолог и химик	Франция	Западная Европа	modern	science,innovation	1822	1895
+alexander-fleming	Александр Флеминг	Открыл пенициллин	Великобритания	Западная Европа	contemporary	science	1881	1955
+rosalind-franklin	Розалинд Франклин	Биофизик	Великобритания	Западная Европа	contemporary	science	1920	1958
+james-watson	Джеймс Уотсон	Биолог, соавтор модели ДНК	США	Северная Америка	contemporary	science	1928	
+francis-crick	Фрэнсис Крик	Биолог, соавтор модели ДНК	Великобритания	Западная Европа	contemporary	science	1916	2004
+barbara-mcclintock	Барбара Мак-Клинток	Генетик	США	Северная Америка	contemporary	science	1902	1992
+jennifer-doudna	Дженнифер Дудна	Биохимик, соавтор CRISPR	США	Северная Америка	contemporary	science,innovation	1964	
+katalin-kariko	Каталин Карико	Биохимик, работы по мРНК	Венгрия	Восточная Европа	contemporary	science,innovation	1955	
+ivan-pavlov	Иван Павлов	Физиолог	Россия	Восточная Европа	modern	science	1849	1936
+sigmund-freud	Зигмунд Фрейд	Основатель психоанализа	Австрия	Западная Европа	contemporary	science,thought	1856	1939
+carl-jung	Карл Юнг	Психиатр, основатель аналитической психологии	Швейцария	Западная Европа	contemporary	science,thought	1875	1961
+daniel-kahneman	Даниэль Канеман	Психолог, исследователь решений	Израиль	Ближний Восток	contemporary	science,thought,finance	1934	2024
+amos-tversky	Амос Тверски	Психолог, исследователь решений	Израиль	Ближний Восток	contemporary	science,thought	1937	1996
+viktor-frankl	Виктор Франкл	Психиатр, автор «Человек в поисках смысла»	Австрия	Западная Европа	contemporary	thought,science	1905	1997
+anders-ericsson	Андерс Эрикссон	Исследователь осознанной практики	Швеция	Скандинавия	contemporary	science,thought	1947	2020
+carol-dweck	Кэрол Дуэк	Психолог, исследования мышления роста	США	Северная Америка	contemporary	science,thought	1946	
+richard-thaler	Ричард Талер	Экономист, поведенческая экономика	США	Северная Америка	contemporary	science,finance	1945	
+john-maynard-keynes	Джон Мейнард Кейнс	Экономист	Великобритания	Западная Европа	contemporary	finance,thought	1883	1946
+milton-friedman	Милтон Фридман	Экономист	США	Северная Америка	contemporary	finance,thought	1912	2006
+friedrich-hayek	Фридрих фон Хайек	Экономист и философ	Австрия	Западная Европа	contemporary	finance,thought	1899	1992
+adam-smith	Адам Смит	Экономист и философ	Великобритания	Западная Европа	early_modern	finance,thought	1723	1790
+peter-drucker	Питер Друкер	Теоретик менеджмента	Австрия	Западная Европа	contemporary	business,thought,strategy	1909	2005
+w-edwards-deming	Уильям Эдвардс Деминг	Теоретик качества	США	Северная Америка	contemporary	business,strategy	1900	1993
+clayton-christensen	Клейтон Кристенсен	Теоретик инноваций	США	Северная Америка	contemporary	business,strategy,innovation	1952	2020
+michael-porter	Майкл Портер	Теоретик конкурентной стратегии	США	Северная Америка	contemporary	strategy,business	1947	
+thomas-edison	Томас Эдисон	Изобретатель и предприниматель	США	Северная Америка	modern	innovation,entrepreneurship	1847	1931
+nikola-tesla	Никола Тесла	Изобретатель и инженер	Сербия	Восточная Европа	modern	innovation,science	1856	1943
+alexander-graham-bell	Александр Белл	Изобретатель телефона	Великобритания	Северная Америка	modern	innovation,technology	1847	1922
+guglielmo-marconi	Гульельмо Маркони	Изобретатель радиосвязи	Италия	Западная Европа	modern	innovation,technology	1874	1937
+wright-brothers-wilbur	Уилбур Райт	Пионер авиации	США	Северная Америка	modern	innovation,technology	1867	1912
+wright-brothers-orville	Орвилл Райт	Пионер авиации	США	Северная Америка	modern	innovation,technology	1871	1948
+george-washington-carver	Джордж Вашингтон Карвер	Учёный-агроном и изобретатель	США	Северная Америка	modern	science,innovation	1864	1943
+buckminster-fuller	Бакминстер Фуллер	Изобретатель и мыслитель	США	Северная Америка	contemporary	innovation,architecture,thought	1895	1983
+james-watt	Джеймс Уатт	Инженер, паровая машина	Великобритания	Западная Европа	early_modern	innovation,technology	1736	1819
+isambard-brunel	Изамбард Брюнель	Инженер	Великобритания	Западная Европа	modern	innovation,architecture	1806	1859
+gustave-eiffel	Гюстав Эйфель	Инженер	Франция	Западная Европа	modern	architecture,innovation	1832	1923
+vladimir-shukhov	Владимир Шухов	Инженер и изобретатель	Россия	Восточная Европа	modern	innovation,architecture	1853	1939
+michael-jordan	Майкл Джордан	Баскетболист	США	Северная Америка	contemporary	sport	1963	
+kobe-bryant	Коби Брайант	Баскетболист	США	Северная Америка	contemporary	sport	1978	2020
+lebron-james	Леброн Джеймс	Баскетболист	США	Северная Америка	contemporary	sport,business	1984	
+bill-russell	Билл Расселл	Баскетболист	США	Северная Америка	contemporary	sport,politics	1934	2022
+muhammad-ali	Мохаммед Али	Боксёр	США	Северная Америка	contemporary	sport,politics	1942	2016
+mike-tyson	Майк Тайсон	Боксёр	США	Северная Америка	contemporary	sport	1966	
+serena-williams	Серена Уильямс	Теннисистка	США	Северная Америка	contemporary	sport,business	1981	
+roger-federer	Роджер Федерер	Теннисист	Швейцария	Западная Европа	contemporary	sport	1981	
+rafael-nadal	Рафаэль Надаль	Теннисист	Испания	Западная Европа	contemporary	sport	1986	
+novak-djokovic	Новак Джокович	Теннисист	Сербия	Восточная Европа	contemporary	sport	1987	
+pele	Пеле	Футболист	Бразилия	Латинская Америка	contemporary	sport	1940	2022
+diego-maradona	Диего Марадона	Футболист	Аргентина	Латинская Америка	contemporary	sport	1960	2020
+lionel-messi	Лионель Месси	Футболист	Аргентина	Латинская Америка	contemporary	sport	1987	
+cristiano-ronaldo	Криштиану Роналду	Футболист	Португалия	Западная Европа	contemporary	sport	1985	
+johan-cruyff	Йохан Кройф	Футболист и тренер	Нидерланды	Западная Европа	contemporary	sport,strategy	1947	2016
+alex-ferguson	Алекс Фергюсон	Футбольный тренер	Великобритания	Западная Европа	contemporary	sport,strategy	1941	
+pep-guardiola	Пеп Гвардиола	Футбольный тренер	Испания	Западная Европа	contemporary	sport,strategy	1971	
+jurgen-klopp	Юрген Клопп	Футбольный тренер	Германия	Западная Европа	contemporary	sport,strategy	1967	
+valery-lobanovsky	Валерий Лобановский	Футбольный тренер	СССР	Восточная Европа	contemporary	sport,strategy	1939	2002
+anatoly-tarasov	Анатолий Тарасов	Хоккейный тренер	СССР	Восточная Европа	contemporary	sport,strategy	1918	1995
+viktor-tikhonov	Виктор Тихонов	Хоккейный тренер	СССР	Восточная Европа	contemporary	sport,strategy	1930	2014
+vladislav-tretiak	Владислав Третьяк	Хоккейный вратарь	СССР	Восточная Европа	contemporary	sport	1952	
+wayne-gretzky	Уэйн Гретцки	Хоккеист	Канада	Северная Америка	contemporary	sport	1961	
+lev-yashin	Лев Яшин	Футбольный вратарь	СССР	Восточная Европа	contemporary	sport	1929	1990
+garry-kasparov	Гарри Каспаров	Шахматист	Россия	Восточная Европа	contemporary	sport,thought,strategy	1963	
+anatoly-karpov	Анатолий Карпов	Шахматист	Россия	Восточная Европа	contemporary	sport,strategy	1951	
+mikhail-botvinnik	Михаил Ботвинник	Шахматист и инженер	СССР	Восточная Европа	contemporary	sport,strategy	1911	1995
+bobby-fischer	Бобби Фишер	Шахматист	США	Северная Америка	contemporary	sport	1943	2008
+magnus-carlsen	Магнус Карлсен	Шахматист	Норвегия	Скандинавия	contemporary	sport,strategy	1990	
+usain-bolt	Усэйн Болт	Спринтер	Ямайка	Латинская Америка	contemporary	sport	1986	
+carl-lewis	Карл Льюис	Легкоатлет	США	Северная Америка	contemporary	sport	1961	
+jesse-owens	Джесси Оуэнс	Легкоатлет	США	Северная Америка	contemporary	sport,politics	1913	1980
+eliud-kipchoge	Элиуд Кипчоге	Марафонец	Кения	Африка	contemporary	sport	1984	
+michael-phelps	Майкл Фелпс	Пловец	США	Северная Америка	contemporary	sport	1985	
+nadia-comaneci	Надя Команечи	Гимнастка	Румыния	Восточная Европа	contemporary	sport	1961	
+simone-biles	Симона Байлз	Гимнастка	США	Северная Америка	contemporary	sport	1997	
+larisa-latynina	Лариса Латынина	Гимнастка	СССР	Восточная Европа	contemporary	sport	1934	2024
+alexander-karelin	Александр Карелин	Борец	Россия	Восточная Европа	contemporary	sport	1967	
+khabib-nurmagomedov	Хабиб Нурмагомедов	Боец смешанных единоборств	Россия	Восточная Европа	contemporary	sport	1988	
+bruce-lee	Брюс Ли	Мастер боевых искусств, актёр	Гонконг	Восточная Азия	contemporary	sport,cinema,thought	1940	1973
+jigoro-kano	Дзигоро Кано	Основатель дзюдо	Япония	Восточная Азия	modern	sport,thought	1860	1938
+ayrton-senna	Айртон Сенна	Автогонщик	Бразилия	Латинская Америка	contemporary	sport	1960	1994
+michael-schumacher	Михаэль Шумахер	Автогонщик	Германия	Западная Европа	contemporary	sport	1969	
+lewis-hamilton	Льюис Хэмилтон	Автогонщик	Великобритания	Западная Европа	contemporary	sport	1985	
+niki-lauda	Ники Лауда	Автогонщик и предприниматель	Австрия	Западная Европа	contemporary	sport,business	1949	2019
+tiger-woods	Тайгер Вудс	Гольфист	США	Северная Америка	contemporary	sport	1975	
+phil-knight	Фил Найт	Основатель Nike	США	Северная Америка	contemporary	business,sport	1938	
+bill-bowerman	Билл Бауэрман	Тренер, сооснователь Nike	США	Северная Америка	contemporary	sport,innovation	1911	1999
+john-wooden	Джон Вуден	Баскетбольный тренер	США	Северная Америка	contemporary	sport,thought	1910	2010
+vince-lombardi	Винс Ломбарди	Тренер по американскому футболу	США	Северная Америка	contemporary	sport,strategy	1913	1970
+reinhold-messner	Райнхольд Месснер	Альпинист	Италия	Западная Европа	contemporary	sport,thought	1944	
+edmund-hillary	Эдмунд Хиллари	Альпинист	Новая Зеландия	Океания	contemporary	sport	1919	2008
+jacques-cousteau	Жак-Ив Кусто	Исследователь океана	Франция	Западная Европа	contemporary	science,media	1910	1997
+roald-amundsen	Руаль Амундсен	Полярный исследователь	Норвегия	Скандинавия	modern	sport,strategy	1872	1928
+ernest-shackleton	Эрнест Шеклтон	Полярный исследователь	Великобритания	Западная Европа	modern	politics,strategy	1874	1922
+johann-sebastian-bach	Иоганн Себастьян Бах	Композитор	Германия	Западная Европа	early_modern	music	1685	1750
+wolfgang-amadeus-mozart	Вольфганг Амадей Моцарт	Композитор	Австрия	Западная Европа	early_modern	music	1756	1791
+ludwig-van-beethoven	Людвиг ван Бетховен	Композитор	Германия	Западная Европа	modern	music	1770	1827
+pyotr-tchaikovsky	Пётр Чайковский	Композитор	Россия	Восточная Европа	modern	music	1840	1893
+igor-stravinsky	Игорь Стравинский	Композитор	Россия	Восточная Европа	contemporary	music,innovation	1882	1971
+dmitri-shostakovich	Дмитрий Шостакович	Композитор	СССР	Восточная Европа	contemporary	music	1906	1975
+sergei-rachmaninoff	Сергей Рахманинов	Композитор и пианист	Россия	Восточная Европа	contemporary	music	1873	1943
+frederic-chopin	Фридерик Шопен	Композитор и пианист	Польша	Восточная Европа	modern	music	1810	1849
+giuseppe-verdi	Джузеппе Верди	Композитор	Италия	Западная Европа	modern	music	1813	1901
+richard-wagner	Рихард Вагнер	Композитор	Германия	Западная Европа	modern	music	1813	1883
+maria-callas	Мария Каллас	Оперная певица	Греция	Западная Европа	contemporary	music	1923	1977
+luciano-pavarotti	Лучано Паваротти	Оперный певец	Италия	Западная Европа	contemporary	music	1935	2007
+glenn-gould	Гленн Гульд	Пианист	Канада	Северная Америка	contemporary	music,thought	1932	1982
+sviatoslav-richter	Святослав Рихтер	Пианист	СССР	Восточная Европа	contemporary	music	1915	1997
+leonard-bernstein	Леонард Бернстайн	Дирижёр и композитор	США	Северная Америка	contemporary	music,media	1918	1990
+herbert-von-karajan	Герберт фон Караян	Дирижёр	Австрия	Западная Европа	contemporary	music	1908	1989
+miles-davis	Майлз Дэвис	Джазовый трубач	США	Северная Америка	contemporary	music,innovation	1926	1991
+john-coltrane	Джон Колтрейн	Джазовый саксофонист	США	Северная Америка	contemporary	music	1926	1967
+duke-ellington	Дюк Эллингтон	Джазовый композитор	США	Северная Америка	contemporary	music	1899	1974
+louis-armstrong	Луи Армстронг	Джазовый музыкант	США	Северная Америка	contemporary	music	1901	1971
+ella-fitzgerald	Элла Фицджеральд	Джазовая певица	США	Северная Америка	contemporary	music	1917	1996
+nina-simone	Нина Симон	Певица и пианистка	США	Северная Америка	contemporary	music,politics	1933	2003
+ray-charles	Рэй Чарльз	Музыкант	США	Северная Америка	contemporary	music	1930	2004
+aretha-franklin	Арета Франклин	Певица	США	Северная Америка	contemporary	music	1942	2018
+james-brown	Джеймс Браун	Музыкант	США	Северная Америка	contemporary	music	1933	2006
+elvis-presley	Элвис Пресли	Музыкант	США	Северная Америка	contemporary	music	1935	1977
+johnny-cash	Джонни Кэш	Музыкант	США	Северная Америка	contemporary	music	1932	2003
+bob-dylan	Боб Дилан	Автор песен	США	Северная Америка	contemporary	music,literature	1941	
+john-lennon	Джон Леннон	Музыкант, участник The Beatles	Великобритания	Западная Европа	contemporary	music	1940	1980
+paul-mccartney	Пол Маккартни	Музыкант, участник The Beatles	Великобритания	Западная Европа	contemporary	music	1942	
+george-martin	Джордж Мартин	Музыкальный продюсер The Beatles	Великобритания	Западная Европа	contemporary	music,innovation	1926	2016
+freddie-mercury	Фредди Меркьюри	Музыкант, вокалист Queen	Великобритания	Западная Европа	contemporary	music	1946	1991
+david-bowie	Дэвид Боуи	Музыкант	Великобритания	Западная Европа	contemporary	music,art	1947	2016
+brian-eno	Брайан Ино	Музыкант и продюсер	Великобритания	Западная Европа	contemporary	music,innovation,thought	1948	
+rick-rubin	Рик Рубин	Музыкальный продюсер	США	Северная Америка	contemporary	music,thought	1963	
+quincy-jones	Куинси Джонс	Продюсер и композитор	США	Северная Америка	contemporary	music,business	1933	2024
+michael-jackson	Майкл Джексон	Музыкант	США	Северная Америка	contemporary	music	1958	2009
+prince	Принс	Музыкант	США	Северная Америка	contemporary	music	1958	2016
+stevie-wonder	Стиви Уандер	Музыкант	США	Северная Америка	contemporary	music	1950	
+madonna	Мадонна	Певица и предприниматель	США	Северная Америка	contemporary	music,business	1958	
+beyonce	Бейонсе	Певица и предприниматель	США	Северная Америка	contemporary	music,business	1981	
+taylor-swift	Тейлор Свифт	Автор песен и предприниматель	США	Северная Америка	contemporary	music,business	1989	
+jay-z	Джей-Зи	Музыкант и предприниматель	США	Северная Америка	contemporary	music,business	1969	
+dr-dre	Доктор Дре	Продюсер и предприниматель	США	Северная Америка	contemporary	music,business	1965	
+kendrick-lamar	Кендрик Ламар	Рэпер	США	Северная Америка	contemporary	music	1987	
+bjork	Бьорк	Музыкант	Исландия	Скандинавия	contemporary	music,art	1965	
+ryuichi-sakamoto	Рюити Сакамото	Композитор	Япония	Восточная Азия	contemporary	music,cinema	1952	2023
+joe-hisaishi	Дзё Хисаиси	Композитор	Япония	Восточная Азия	contemporary	music,cinema	1950	
+ennio-morricone	Эннио Морриконе	Композитор	Италия	Западная Европа	contemporary	music,cinema	1928	2020
+hans-zimmer	Ханс Циммер	Композитор	Германия	Западная Европа	contemporary	music,cinema	1957	
+ravi-shankar	Рави Шанкар	Музыкант	Индия	Южная Азия	contemporary	music	1920	2012
+fela-kuti	Фела Кути	Музыкант	Нигерия	Африка	contemporary	music,politics	1938	1997
+bob-marley	Боб Марли	Музыкант	Ямайка	Латинская Америка	contemporary	music,politics	1945	1981
+vladimir-vysotsky	Владимир Высоцкий	Поэт, певец, актёр	СССР	Восточная Европа	contemporary	music,literature	1938	1980
+bulat-okudzhava	Булат Окуджава	Поэт и автор песен	СССР	Восточная Европа	contemporary	music,literature	1924	1997
+akira-kurosawa	Акира Куросава	Кинорежиссёр	Япония	Восточная Азия	contemporary	cinema,art	1910	1998
+hayao-miyazaki	Хаяо Миядзаки	Режиссёр анимации	Япония	Восточная Азия	contemporary	cinema,art	1941	
+yasujiro-ozu	Ясудзиро Одзу	Кинорежиссёр	Япония	Восточная Азия	contemporary	cinema	1903	1963
+alfred-hitchcock	Альфред Хичкок	Кинорежиссёр	Великобритания	Западная Европа	contemporary	cinema	1899	1980
+stanley-kubrick	Стэнли Кубрик	Кинорежиссёр	США	Северная Америка	contemporary	cinema,art	1928	1999
+orson-welles	Орсон Уэллс	Кинорежиссёр и актёр	США	Северная Америка	contemporary	cinema	1915	1985
+martin-scorsese	Мартин Скорсезе	Кинорежиссёр	США	Северная Америка	contemporary	cinema	1942	
+francis-ford-coppola	Фрэнсис Форд Коппола	Кинорежиссёр	США	Северная Америка	contemporary	cinema,business	1939	
+steven-spielberg	Стивен Спилберг	Кинорежиссёр и продюсер	США	Северная Америка	contemporary	cinema,business	1946	
+george-lucas	Джордж Лукас	Кинорежиссёр и предприниматель	США	Северная Америка	contemporary	cinema,business,innovation	1944	
+christopher-nolan	Кристофер Нолан	Кинорежиссёр	Великобритания	Западная Европа	contemporary	cinema	1970	
+quentin-tarantino	Квентин Тарантино	Кинорежиссёр	США	Северная Америка	contemporary	cinema	1963	
+david-lynch	Дэвид Линч	Кинорежиссёр	США	Северная Америка	contemporary	cinema,art	1946	2025
+agnes-varda	Аньес Варда	Кинорежиссёр	Франция	Западная Европа	contemporary	cinema,art	1928	2019
+federico-fellini	Федерико Феллини	Кинорежиссёр	Италия	Западная Европа	contemporary	cinema	1920	1993
+ingmar-bergman	Ингмар Бергман	Кинорежиссёр	Швеция	Скандинавия	contemporary	cinema,thought	1918	2007
+andrei-tarkovsky	Андрей Тарковский	Кинорежиссёр	СССР	Восточная Европа	contemporary	cinema,art,thought	1932	1986
+sergei-eisenstein	Сергей Эйзенштейн	Кинорежиссёр и теоретик	СССР	Восточная Европа	contemporary	cinema,innovation	1898	1948
+wong-kar-wai	Вонг Карвай	Кинорежиссёр	Гонконг	Восточная Азия	contemporary	cinema,art	1958	
+bong-joon-ho	Пон Джун Хо	Кинорежиссёр	Южная Корея	Восточная Азия	contemporary	cinema	1969	
+park-chan-wook	Пак Чхан Ук	Кинорежиссёр	Южная Корея	Восточная Азия	contemporary	cinema	1963	
+satyajit-ray	Сатьяджит Рай	Кинорежиссёр	Индия	Южная Азия	contemporary	cinema,art	1921	1992
+pedro-almodovar	Педро Альмодовар	Кинорежиссёр	Испания	Западная Европа	contemporary	cinema	1949	
+alejandro-inarritu	Алехандро Гонсалес Иньярриту	Кинорежиссёр	Мексика	Латинская Америка	contemporary	cinema	1963	
+alfonso-cuaron	Альфонсо Куарон	Кинорежиссёр	Мексика	Латинская Америка	contemporary	cinema	1961	
+charlie-chaplin	Чарли Чаплин	Актёр и режиссёр	Великобритания	Западная Европа	contemporary	cinema,business	1889	1977
+buster-keaton	Бастер Китон	Актёр и режиссёр	США	Северная Америка	contemporary	cinema	1895	1966
+marlon-brando	Марлон Брандо	Актёр	США	Северная Америка	contemporary	cinema	1924	2004
+meryl-streep	Мерил Стрип	Актриса	США	Северная Америка	contemporary	cinema	1949	
+denzel-washington	Дензел Вашингтон	Актёр	США	Северная Америка	contemporary	cinema	1954	
+anthony-hopkins	Энтони Хопкинс	Актёр	Великобритания	Западная Европа	contemporary	cinema	1937	
+toshiro-mifune	Тосиро Мифунэ	Актёр	Япония	Восточная Азия	contemporary	cinema	1920	1997
+audrey-hepburn	Одри Хепберн	Актриса	Великобритания	Западная Европа	contemporary	cinema	1929	1993
+katharine-hepburn	Кэтрин Хепбёрн	Актриса	США	Северная Америка	contemporary	cinema	1907	2003
+konstantin-stanislavski	Константин Станиславский	Режиссёр, создатель актёрской системы	Россия	Восточная Европа	contemporary	cinema,thought	1863	1938
+roger-deakins	Роджер Дикинс	Кинооператор	Великобритания	Западная Европа	contemporary	cinema,art	1949	
+walter-murch	Уолтер Мёрч	Монтажёр и звукорежиссёр	США	Северная Америка	contemporary	cinema,thought	1943	
+ed-catmull	Эд Кэтмелл	Сооснователь Pixar	США	Северная Америка	contemporary	technology,cinema,business	1945	
+john-lasseter	Джон Лассетер	Режиссёр анимации Pixar	США	Северная Америка	contemporary	cinema,art	1957	
+yuri-norstein	Юрий Норштейн	Режиссёр анимации	Россия	Восточная Европа	contemporary	cinema,art	1941	
+leo-tolstoy	Лев Толстой	Писатель	Россия	Восточная Европа	modern	literature,thought	1828	1910
+fyodor-dostoevsky	Фёдор Достоевский	Писатель	Россия	Восточная Европа	modern	literature,thought	1821	1881
+anton-chekhov	Антон Чехов	Писатель и драматург	Россия	Восточная Европа	modern	literature	1860	1904
+alexander-pushkin	Александр Пушкин	Поэт	Россия	Восточная Европа	modern	literature	1799	1837
+nikolai-gogol	Николай Гоголь	Писатель	Россия	Восточная Европа	modern	literature	1809	1852
+mikhail-bulgakov	Михаил Булгаков	Писатель	СССР	Восточная Европа	contemporary	literature	1891	1940
+vladimir-nabokov	Владимир Набоков	Писатель	Россия	Северная Америка	contemporary	literature	1899	1977
+joseph-brodsky	Иосиф Бродский	Поэт	СССР	Северная Америка	contemporary	literature,thought	1940	1996
+anna-akhmatova	Анна Ахматова	Поэт	Россия	Восточная Европа	contemporary	literature	1889	1966
+marina-tsvetaeva	Марина Цветаева	Поэт	Россия	Восточная Европа	contemporary	literature	1892	1941
+alexander-solzhenitsyn	Александр Солженицын	Писатель	СССР	Восточная Европа	contemporary	literature,politics	1918	2008
+william-shakespeare	Уильям Шекспир	Драматург и поэт	Великобритания	Западная Европа	early_modern	literature	1564	1616
+charles-dickens	Чарльз Диккенс	Писатель	Великобритания	Западная Европа	modern	literature	1812	1870
+jane-austen	Джейн Остин	Писательница	Великобритания	Западная Европа	modern	literature	1775	1817
+virginia-woolf	Вирджиния Вулф	Писательница	Великобритания	Западная Европа	contemporary	literature,thought	1882	1941
+george-orwell	Джордж Оруэлл	Писатель и публицист	Великобритания	Западная Европа	contemporary	literature,politics	1903	1950
+ernest-hemingway	Эрнест Хемингуэй	Писатель	США	Северная Америка	contemporary	literature	1899	1961
+mark-twain	Марк Твен	Писатель	США	Северная Америка	modern	literature	1835	1910
+william-faulkner	Уильям Фолкнер	Писатель	США	Северная Америка	contemporary	literature	1897	1962
+toni-morrison	Тони Моррисон	Писательница	США	Северная Америка	contemporary	literature	1931	2019
+maya-angelou	Майя Энджелоу	Поэт и писательница	США	Северная Америка	contemporary	literature,politics	1928	2014
+james-baldwin	Джеймс Болдуин	Писатель и публицист	США	Северная Америка	contemporary	literature,politics,thought	1924	1987
+joan-didion	Джоан Дидион	Писательница и журналист	США	Северная Америка	contemporary	literature,media	1934	2021
+stephen-king	Стивен Кинг	Писатель	США	Северная Америка	contemporary	literature	1947	
+ursula-le-guin	Урсула Ле Гуин	Писательница	США	Северная Америка	contemporary	literature,thought	1929	2018
+isaac-asimov	Айзек Азимов	Писатель и популяризатор науки	США	Северная Америка	contemporary	literature,science	1920	1992
+ray-bradbury	Рэй Брэдбери	Писатель	США	Северная Америка	contemporary	literature	1920	2012
+kurt-vonnegut	Курт Воннегут	Писатель	США	Северная Америка	contemporary	literature	1922	2007
+j-k-rowling	Джоан Роулинг	Писательница	Великобритания	Западная Европа	contemporary	literature,business	1965	
+j-r-r-tolkien	Джон Рональд Руэл Толкин	Писатель и филолог	Великобритания	Западная Европа	contemporary	literature	1892	1973
+agatha-christie	Агата Кристи	Писательница	Великобритания	Западная Европа	contemporary	literature	1890	1976
+gabriel-garcia-marquez	Габриэль Гарсиа Маркес	Писатель	Колумбия	Латинская Америка	contemporary	literature	1927	2014
+jorge-luis-borges	Хорхе Луис Борхес	Писатель	Аргентина	Латинская Америка	contemporary	literature,thought	1899	1986
+pablo-neruda	Пабло Неруда	Поэт	Чили	Латинская Америка	contemporary	literature,politics	1904	1973
+franz-kafka	Франц Кафка	Писатель	Чехия	Восточная Европа	contemporary	literature	1883	1924
+marcel-proust	Марсель Пруст	Писатель	Франция	Западная Европа	contemporary	literature	1871	1922
+albert-camus	Альбер Камю	Писатель и философ	Франция	Западная Европа	contemporary	literature,thought	1913	1960
+victor-hugo	Виктор Гюго	Писатель	Франция	Западная Европа	modern	literature,politics	1802	1885
+johann-wolfgang-goethe	Иоганн Вольфганг Гёте	Писатель и мыслитель	Германия	Западная Европа	early_modern	literature,thought	1749	1832
+thomas-mann	Томас Манн	Писатель	Германия	Западная Европа	contemporary	literature	1875	1955
+haruki-murakami	Харуки Мураками	Писатель	Япония	Восточная Азия	contemporary	literature	1949	
+yukio-mishima	Юкио Мисима	Писатель	Япония	Восточная Азия	contemporary	literature	1925	1970
+lu-xun	Лу Синь	Писатель	Китай	Восточная Азия	contemporary	literature,politics	1881	1936
+rabindranath-tagore	Рабиндранат Тагор	Поэт и мыслитель	Индия	Южная Азия	modern	literature,thought	1861	1941
+chinua-achebe	Чинуа Ачебе	Писатель	Нигерия	Африка	contemporary	literature	1930	2013
+naguib-mahfouz	Нагиб Махфуз	Писатель	Египет	Ближний Восток	contemporary	literature	1911	2006
+orhan-pamuk	Орхан Памук	Писатель	Турция	Ближний Восток	contemporary	literature	1952	
+svetlana-alexievich	Светлана Алексиевич	Писательница и журналист	Беларусь	Восточная Европа	contemporary	literature,media	1948	
+pablo-picasso	Пабло Пикассо	Художник	Испания	Западная Европа	contemporary	art,design	1881	1973
+vincent-van-gogh	Винсент Ван Гог	Художник	Нидерланды	Западная Европа	modern	art	1853	1890
+claude-monet	Клод Моне	Художник	Франция	Западная Европа	modern	art	1840	1926
+salvador-dali	Сальвадор Дали	Художник	Испания	Западная Европа	contemporary	art,media	1904	1989
+frida-kahlo	Фрида Кало	Художница	Мексика	Латинская Америка	contemporary	art	1907	1954
+diego-rivera	Диего Ривера	Художник-монументалист	Мексика	Латинская Америка	contemporary	art,politics	1886	1957
+henri-matisse	Анри Матисс	Художник	Франция	Западная Европа	contemporary	art	1869	1954
+wassily-kandinsky	Василий Кандинский	Художник и теоретик	Россия	Западная Европа	contemporary	art,thought	1866	1944
+kazimir-malevich	Казимир Малевич	Художник	Россия	Восточная Европа	contemporary	art,innovation	1879	1935
+marc-chagall	Марк Шагал	Художник	Россия	Западная Европа	contemporary	art	1887	1985
+andy-warhol	Энди Уорхол	Художник	США	Северная Америка	contemporary	art,media,business	1928	1987
+jean-michel-basquiat	Жан-Мишель Баския	Художник	США	Северная Америка	contemporary	art	1960	1988
+jackson-pollock	Джексон Поллок	Художник	США	Северная Америка	contemporary	art	1912	1956
+georgia-okeeffe	Джорджия О'Киф	Художница	США	Северная Америка	contemporary	art	1887	1986
+banksy	Бэнкси	Уличный художник	Великобритания	Западная Европа	contemporary	art,media	1974	
+ai-weiwei	Ай Вэйвэй	Художник	Китай	Восточная Азия	contemporary	art,politics	1957	
+yayoi-kusama	Яёи Кусама	Художница	Япония	Восточная Азия	contemporary	art	1929	
+hokusai	Кацусика Хокусай	Художник	Япония	Восточная Азия	early_modern	art	1760	1849
+leonardo-da-vinci	Леонардо да Винчи	Художник, инженер, исследователь	Италия	Западная Европа	early_modern	art,science,innovation	1452	1519
+michelangelo	Микеланджело Буонарроти	Скульптор, художник, архитектор	Италия	Западная Европа	early_modern	art,architecture	1475	1564
+raphael	Рафаэль Санти	Художник	Италия	Западная Европа	early_modern	art	1483	1520
+rembrandt	Рембрандт ван Рейн	Художник	Нидерланды	Западная Европа	early_modern	art	1606	1669
+johannes-vermeer	Ян Вермеер	Художник	Нидерланды	Западная Европа	early_modern	art	1632	1675
+caravaggio	Караваджо	Художник	Италия	Западная Европа	early_modern	art	1571	1610
+albrecht-durer	Альбрехт Дюрер	Художник и гравёр	Германия	Западная Европа	early_modern	art,business	1471	1528
+auguste-rodin	Огюст Роден	Скульптор	Франция	Западная Европа	modern	art	1840	1917
+constantin-brancusi	Константин Брынкуши	Скульптор	Румыния	Западная Европа	contemporary	art,design	1876	1957
+henri-cartier-bresson	Анри Картье-Брессон	Фотограф	Франция	Западная Европа	contemporary	art,media	1908	2004
+ansel-adams	Ансель Адамс	Фотограф	США	Северная Америка	contemporary	art,science	1902	1984
+sebastiao-salgado	Себастьян Салгаду	Фотограф	Бразилия	Латинская Америка	contemporary	art,media	1944	2025
+annie-leibovitz	Энни Лейбовиц	Фотограф	США	Северная Америка	contemporary	art,media	1949	
+robert-capa	Роберт Капа	Фотожурналист	Венгрия	Восточная Европа	contemporary	media,art	1913	1954
+winston-churchill	Уинстон Черчилль	Премьер-министр Великобритании	Великобритания	Западная Европа	contemporary	politics,literature,strategy	1874	1965
+franklin-roosevelt	Франклин Рузвельт	Президент США	США	Северная Америка	contemporary	politics,strategy	1882	1945
+abraham-lincoln	Авраам Линкольн	Президент США	США	Северная Америка	modern	politics,strategy	1809	1865
+george-washington	Джордж Вашингтон	Первый президент США	США	Северная Америка	early_modern	politics,strategy	1732	1799
+benjamin-franklin	Бенджамин Франклин	Учёный, издатель, дипломат	США	Северная Америка	early_modern	science,politics,thought	1706	1790
+thomas-jefferson	Томас Джефферсон	Президент США	США	Северная Америка	early_modern	politics,thought	1743	1826
+mahatma-gandhi	Махатма Ганди	Лидер движения за независимость Индии	Индия	Южная Азия	contemporary	politics,thought	1869	1948
+nelson-mandela	Нельсон Мандела	Президент ЮАР	ЮАР	Африка	contemporary	politics,strategy	1918	2013
+martin-luther-king	Мартин Лютер Кинг	Лидер движения за гражданские права	США	Северная Америка	contemporary	politics,thought	1929	1968
+malcolm-x	Малкольм Икс	Общественный деятель	США	Северная Америка	contemporary	politics,thought	1925	1965
+rosa-parks	Роза Паркс	Активистка движения за гражданские права	США	Северная Америка	contemporary	politics	1913	2005
+lee-kuan-yew	Ли Куан Ю	Премьер-министр Сингапура	Сингапур	Юго-Восточная Азия	contemporary	politics,strategy	1923	2015
+deng-xiaoping	Дэн Сяопин	Лидер Китая, реформатор	Китай	Восточная Азия	contemporary	politics,strategy	1904	1997
+margaret-thatcher	Маргарет Тэтчер	Премьер-министр Великобритании	Великобритания	Западная Европа	contemporary	politics,strategy	1925	2013
+charles-de-gaulle	Шарль де Голль	Президент Франции	Франция	Западная Европа	contemporary	politics,strategy	1890	1970
+konrad-adenauer	Конрад Аденауэр	Канцлер ФРГ	Германия	Западная Европа	contemporary	politics,strategy	1876	1967
+angela-merkel	Ангела Меркель	Канцлер Германии	Германия	Западная Европа	contemporary	politics,strategy	1954	
+kofi-annan	Кофи Аннан	Генеральный секретарь ООН	Гана	Африка	contemporary	politics	1938	2018
+eleanor-roosevelt	Элеонора Рузвельт	Дипломат и общественный деятель	США	Северная Америка	contemporary	politics,media	1884	1962
+golda-meir	Голда Меир	Премьер-министр Израиля	Израиль	Ближний Восток	contemporary	politics	1898	1978
+indira-gandhi	Индира Ганди	Премьер-министр Индии	Индия	Южная Азия	contemporary	politics	1917	1984
+sun-yat-sen	Сунь Ятсен	Политический деятель, основатель Китайской республики	Китай	Восточная Азия	contemporary	politics	1866	1925
+mustafa-kemal-ataturk	Мустафа Кемаль Ататюрк	Основатель Турецкой Республики	Турция	Ближний Восток	contemporary	politics,strategy	1881	1938
+peter-the-great	Пётр I	Российский император, реформатор	Россия	Восточная Европа	early_modern	politics,strategy,innovation	1672	1725
+catherine-the-great	Екатерина II	Российская императрица	Россия	Восточная Европа	early_modern	politics,strategy	1729	1796
+napoleon-bonaparte	Наполеон Бонапарт	Император Франции, полководец	Франция	Западная Европа	modern	politics,strategy	1769	1821
+simon-bolivar	Симон Боливар	Лидер освобождения Южной Америки	Венесуэла	Латинская Америка	modern	politics,strategy	1783	1830
+oda-nobunaga	Ода Нобунага	Военачальник и объединитель Японии	Япония	Восточная Азия	early_modern	politics,strategy	1534	1582
+tokugawa-ieyasu	Токугава Иэясу	Основатель сёгуната	Япония	Восточная Азия	early_modern	politics,strategy	1543	1616
+elizabeth-i	Елизавета I	Королева Англии	Великобритания	Западная Европа	early_modern	politics,strategy	1533	1603
+joan-of-arc	Жанна д'Арк	Военачальница	Франция	Западная Европа	medieval	politics	1412	1431
+william-randolph-hearst	Уильям Рэндольф Хёрст	Медиамагнат	США	Северная Америка	contemporary	media,business	1863	1951
+joseph-pulitzer	Джозеф Пулитцер	Издатель	США	Северная Америка	modern	media,business	1847	1911
+rupert-murdoch	Руперт Мёрдок	Медиамагнат	Австралия	Океания	contemporary	media,business	1931	
+ted-turner	Тед Тёрнер	Основатель CNN	США	Северная Америка	contemporary	media,business	1938	
+oprah-winfrey	Опра Уинфри	Телеведущая и предприниматель	США	Северная Америка	contemporary	media,business,content	1954	
+anna-wintour	Анна Винтур	Главный редактор Vogue	Великобритания	Северная Америка	contemporary	media,design	1949	
+david-ogilvy	Дэвид Огилви	Основатель рекламного агентства	Великобритания	Северная Америка	contemporary	media,business,content	1911	1999
+bill-bernbach	Билл Бернбах	Рекламист	США	Северная Америка	contemporary	media,content	1911	1982
+marshall-mcluhan	Маршалл Маклюэн	Теоретик медиа	Канада	Северная Америка	contemporary	media,thought	1911	1980
+walter-cronkite	Уолтер Кронкайт	Журналист	США	Северная Америка	contemporary	media	1916	2009
+vladimir-pozner	Владимир Познер	Журналист	Россия	Восточная Европа	contemporary	media	1934	
+yuri-dud	Юрий Дудь	Журналист и интервьюер	Россия	Восточная Европа	contemporary	media,content	1986	
+joe-rogan	Джо Роган	Ведущий подкаста	США	Северная Америка	contemporary	content,media	1967	
+mrbeast	Джимми Дональдсон	Создатель контента и предприниматель	США	Северная Америка	contemporary	content,business	1998	
+casey-neistat	Кейси Найстат	Видеоблогер и предприниматель	США	Северная Америка	contemporary	content,media	1981	
+tim-ferriss	Тим Феррис	Автор и ведущий подкаста	США	Северная Америка	contemporary	content,thought,business	1977	
+seth-godin	Сет Годин	Автор и маркетолог	США	Северная Америка	contemporary	content,business,thought	1960	
+naval-ravikant	Навал Равикант	Инвестор и эссеист	США	Северная Америка	contemporary	finance,thought,content	1974	
+james-clear	Джеймс Клир	Автор книги о привычках	США	Северная Америка	contemporary	thought,content	1986	
+cal-newport	Кэл Ньюпорт	Учёный и автор о глубокой работе	США	Северная Америка	contemporary	thought,science,content	1982	
+socrates	Сократ	Философ	Греция	Западная Европа	ancient	thought	-470	-399
+plato	Платон	Философ	Греция	Западная Европа	ancient	thought,politics	-428	-348
+aristotle	Аристотель	Философ и учёный	Греция	Западная Европа	ancient	thought,science	-384	-322
+marcus-aurelius	Марк Аврелий	Римский император и философ	Рим	Западная Европа	ancient	thought,politics	121	180
+seneca	Сенека	Философ и государственный деятель	Рим	Западная Европа	ancient	thought,politics	-4	65
+epictetus	Эпиктет	Философ	Греция	Западная Европа	ancient	thought	50	135
+cicero	Цицерон	Оратор и политик	Рим	Западная Европа	ancient	politics,thought	-106	-43
+julius-caesar	Юлий Цезарь	Полководец и государственный деятель	Рим	Западная Европа	ancient	politics,strategy	-100	-44
+alexander-the-great	Александр Македонский	Полководец	Греция	Западная Европа	ancient	politics,strategy	-356	-323
+archimedes	Архимед	Математик и инженер	Греция	Западная Европа	ancient	science,innovation	-287	-212
+euclid	Евклид	Математик	Греция	Западная Европа	ancient	science	-325	-265
+pythagoras	Пифагор	Математик и философ	Греция	Западная Европа	ancient	science,thought	-570	-495
+hippocrates	Гиппократ	Врач	Греция	Западная Европа	ancient	science	-460	-370
+herodotus	Геродот	Историк	Греция	Западная Европа	ancient	literature,thought	-484	-425
+thucydides	Фукидид	Историк	Греция	Западная Европа	ancient	literature,strategy	-460	-400
+homer	Гомер	Поэт	Греция	Западная Европа	ancient	literature	-800	-701
+confucius	Конфуций	Философ	Китай	Восточная Азия	ancient	thought,politics	-551	-479
+laozi	Лао-цзы	Философ	Китай	Восточная Азия	ancient	thought	-601	-531
+sun-tzu	Сунь-цзы	Военный теоретик	Китай	Восточная Азия	ancient	strategy,thought	-544	-496
+zhuangzi	Чжуан-цзы	Философ	Китай	Восточная Азия	ancient	thought	-369	-286
+siddhartha-gautama	Сиддхартха Гаутама	Основатель буддийской традиции	Индия	Южная Азия	ancient	thought	-563	-483
+chanakya	Чанакья	Политический мыслитель	Индия	Южная Азия	ancient	strategy,politics	-375	-283
+ashoka	Ашока	Император Маурьев	Индия	Южная Азия	ancient	politics	-304	-232
+qin-shi-huang	Цинь Шихуанди	Первый император Китая	Китай	Восточная Азия	ancient	politics,strategy	-259	-210
+hannibal	Ганнибал	Полководец	Карфаген	Африка	ancient	strategy	-247	-183
+cleopatra	Клеопатра VII	Царица Египта	Египет	Ближний Восток	ancient	politics,strategy	-69	-30
+imhotep	Имхотеп	Архитектор и врач	Египет	Ближний Восток	ancient	architecture,science	-2650	-2600
+hatshepsut	Хатшепсут	Фараон Египта	Египет	Ближний Восток	ancient	politics	-1507	-1458
+avicenna	Авиценна	Врач и философ	Персия	Ближний Восток	medieval	science,thought	980	1037
+al-khwarizmi	Аль-Хорезми	Математик	Персия	Ближний Восток	medieval	science,innovation	780	850
+alhazen	Ибн аль-Хайсам	Учёный, основатель оптики	Ирак	Ближний Восток	medieval	science	965	1040
+al-biruni	Аль-Бируни	Учёный-энциклопедист	Персия	Ближний Восток	medieval	science	973	1048
+ibn-khaldun	Ибн Хальдун	Историк и социолог	Тунис	Африка	medieval	thought,science	1332	1406
+rumi	Руми	Поэт и мыслитель	Персия	Ближний Восток	medieval	literature,thought	1207	1273
+omar-khayyam	Омар Хайям	Поэт и математик	Персия	Ближний Восток	medieval	literature,science	1048	1131
+thomas-aquinas	Фома Аквинский	Философ и богослов	Италия	Западная Европа	medieval	thought	1225	1274
+dante-alighieri	Данте Алигьери	Поэт	Италия	Западная Европа	medieval	literature	1265	1321
+marco-polo	Марко Поло	Путешественник и купец	Италия	Западная Европа	medieval	media,business	1254	1324
+genghis-khan	Чингисхан	Основатель Монгольской империи	Монголия	Восточная Азия	medieval	politics,strategy	1162	1227
+johannes-gutenberg	Иоганн Гутенберг	Изобретатель книгопечатания	Германия	Западная Европа	medieval	innovation,media	1400	1468
+niccolo-machiavelli	Никколо Макиавелли	Политический мыслитель	Италия	Западная Европа	early_modern	strategy,politics,thought	1469	1527
+galileo-galilei	Галилео Галилей	Астроном и физик	Италия	Западная Европа	early_modern	science	1564	1642
+isaac-newton	Исаак Ньютон	Физик и математик	Великобритания	Западная Европа	early_modern	science,thought	1643	1727
+nicolaus-copernicus	Николай Коперник	Астроном	Польша	Восточная Европа	early_modern	science	1473	1543
+johannes-kepler	Иоганн Кеплер	Астроном	Германия	Западная Европа	early_modern	science	1571	1630
+rene-descartes	Рене Декарт	Философ и математик	Франция	Западная Европа	early_modern	thought,science	1596	1650
+baruch-spinoza	Барух Спиноза	Философ	Нидерланды	Западная Европа	early_modern	thought	1632	1677
+immanuel-kant	Иммануил Кант	Философ	Германия	Восточная Европа	early_modern	thought	1724	1804
+miyamoto-musashi	Миямото Мусаси	Фехтовальщик и автор «Книги пяти колец»	Япония	Восточная Азия	early_modern	strategy,thought	1584	1645
+mansa-musa	Манса Муса	Правитель империи Мали	Мали	Африка	medieval	politics,finance	1280	1337
