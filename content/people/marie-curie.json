@@ -14,12 +14,12 @@
   "confidence": "high",
   "categories": ["science", "innovation"],
   "image": {
-    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Marie_Curie_c._1920s.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg",
     "source": "Wikimedia Commons",
     "credit": "Public domain",
     "alt": "Портрет Марии Кюри, 1920-е годы",
-    "width": 1000,
-    "height": 1270
+    "width": 1549,
+    "height": 2105
   },
   "sources": [
     {
