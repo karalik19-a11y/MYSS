@@ -1,0 +1,40 @@
+databases:
+  - name: myss-db
+    databaseName: myss
+    plan: free
+    postgresMajorVersion: "16"
+
+services:
+  - type: web
+    name: myss
+    runtime: node
+    plan: free
+    region: frankfurt
+    # NODE_ENV=production заставляет npm пропускать devDependencies,
+    # а tailwindcss, postcss и typescript нужны именно на сборке.
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:migrate
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: myss-db
+          property: connectionString
+      # Значения ниже задаются вручную в панели Render (не хранятся в Git).
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: NEXT_PUBLIC_APP_URL
+        sync: false
+      - key: TELEGRAM_WEBAPP_URL
+        sync: false
+      - key: ADMIN_SECRET
+        generateValue: true
+      - key: ADMIN_TELEGRAM_IDS
+        sync: false
+      - key: TELEGRAM_WEBHOOK_SECRET
+        generateValue: true

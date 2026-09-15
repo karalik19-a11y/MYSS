@@ -1,0 +1,21 @@
+[
+  { "slug": "business", "name": "Бизнес", "description": "Управление компаниями, масштабирование, операционная работа.", "accent": "#e8543f", "sortOrder": 10 },
+  { "slug": "entrepreneurship", "name": "Предпринимательство", "description": "Как начинают с нуля и доводят идею до продукта.", "accent": "#f0803c", "sortOrder": 20 },
+  { "slug": "finance", "name": "Финансы", "description": "Инвестиции, капитал, отношение к деньгам и риску.", "accent": "#d4a24c", "sortOrder": 30 },
+  { "slug": "technology", "name": "Технологии", "description": "Инженеры и основатели, изменившие способ работы вещей.", "accent": "#4c8fd4", "sortOrder": 40 },
+  { "slug": "science", "name": "Наука", "description": "Исследователи, которые меняли картину мира.", "accent": "#5aa9a3", "sortOrder": 50 },
+  { "slug": "sport", "name": "Спорт", "description": "Дисциплина, подготовка, работа с поражениями.", "accent": "#6fbf5a", "sortOrder": 60 },
+  { "slug": "music", "name": "Музыка", "description": "Композиторы, исполнители, продюсеры.", "accent": "#a06fd4", "sortOrder": 70 },
+  { "slug": "cinema", "name": "Кино", "description": "Режиссёры, актёры, устройство съёмочного процесса.", "accent": "#c25a8f", "sortOrder": 80 },
+  { "slug": "media", "name": "Медиа", "description": "Издатели, редакторы, медиаменеджеры.", "accent": "#d46f6f", "sortOrder": 90 },
+  { "slug": "content", "name": "Контент", "description": "Те, кто строит аудиторию и говорит с ней напрямую.", "accent": "#e07a5f", "sortOrder": 100 },
+  { "slug": "literature", "name": "Литература", "description": "Писатели, поэты, работа с текстом и дисциплиной письма.", "accent": "#8f8f6f", "sortOrder": 110 },
+  { "slug": "art", "name": "Искусство", "description": "Художники и их способ видеть.", "accent": "#bf7a4c", "sortOrder": 120 },
+  { "slug": "design", "name": "Дизайн", "description": "Промышленный, графический и продуктовый дизайн.", "accent": "#5a8fbf", "sortOrder": 130 },
+  { "slug": "architecture", "name": "Архитектура", "description": "Работа с пространством, ограничениями и временем.", "accent": "#7a8f9f", "sortOrder": 140 },
+  { "slug": "politics", "name": "Политика и лидерство", "description": "Решения в условиях давления и ответственности.", "accent": "#8f6f5a", "sortOrder": 150 },
+  { "slug": "strategy", "name": "Стратегия", "description": "Долгосрочное мышление и выбор направления.", "accent": "#6f7fa0", "sortOrder": 160 },
+  { "slug": "innovation", "name": "Инновации", "description": "Изобретатели и те, кто создаёт новые категории.", "accent": "#4fa0a0", "sortOrder": 170 },
+  { "slug": "thought", "name": "Мыслители", "description": "Философы и люди, изменившие способ думать.", "accent": "#9f8f7a", "sortOrder": 180 },
+  { "slug": "other", "name": "Другое", "description": "Опыт, который не укладывается в одну сферу.", "accent": "#7f7f7f", "sortOrder": 999 }
+]
