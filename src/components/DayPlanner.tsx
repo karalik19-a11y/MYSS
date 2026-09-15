@@ -8,6 +8,7 @@ import type { PersonCard } from '@/server/queries'
 import { api, haptic } from '@/lib/telegram'
 import { EmptyState, Reveal, Skeleton } from './ui'
 import { IconArrow, IconCheck, IconClose } from './Icons'
+import { wikiThumb } from '@/lib/content-utils'
 
 interface RoutineItem {
   id: string
@@ -212,10 +213,11 @@ export function DayPlanner({ people }: { people: PersonCard[] }) {
                     <div className="relative aspect-[3/4] bg-ink-800">
                       {p.imageUrl && (
                         <Image
-                          src={p.imageUrl}
+                          src={wikiThumb(p.imageUrl, 240)!}
                           alt={p.imageAlt ?? p.displayName}
                           fill
                           sizes="90px"
+                          loading="lazy"
                           className="object-cover object-top"
                         />
                       )}
@@ -273,10 +275,11 @@ export function DayPlanner({ people }: { people: PersonCard[] }) {
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-ink-800">
                       {r.person.imageUrl && (
                         <Image
-                          src={r.person.imageUrl}
+                          src={wikiThumb(r.person.imageUrl, 128)!}
                           alt={r.person.imageAlt ?? r.person.displayName}
                           fill
                           sizes="48px"
+                          loading="lazy"
                           className="object-cover object-top"
                         />
                       )}

@@ -1,4 +1,5 @@
 import { NextRequest } from 'next/server'
+import { revalidateTag } from 'next/cache'
 import { z } from 'zod'
 import { prisma } from '@/lib/prisma'
 import { requireAdmin } from '@/server/auth'
@@ -147,6 +148,10 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ sl
         }
       }
     }
+
+    // Публичные страницы читают контент из кэша — после правки его нужно
+    // сбросить, иначе изменения не появятся до истечения срока хранения.
+    revalidateTag('content')
 
     logger.info('admin.person_updated', {
       adminId: admin.id,

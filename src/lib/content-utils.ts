@@ -98,3 +98,28 @@ export function parseList(body?: string | null): string[] {
     .filter((l) => l.startsWith('- '))
     .map((l) => l.slice(2).trim())
 }
+
+/**
+ * Вики-хранилище отдаёт по прямой ссылке оригинал файла — иногда несколько
+ * мегабайт. Для карточек и обложек этого не нужно: превью нужной ширины
+ * весит на порядок меньше и отдаётся с того же CDN.
+ *
+ * Оригинал:  /wikipedia/commons/0/0d/Имя.jpg
+ * Превью:    /wikipedia/commons/thumb/0/0d/Имя.jpg/640px-Имя.jpg
+ */
+export function wikiThumb(url: string | null | undefined, width: number): string | null {
+  if (!url) return null
+  if (!url.includes('/wikipedia/commons/')) return url
+  // Уже превью — подменяем только ширину.
+  if (url.includes('/commons/thumb/')) {
+    return url.replace(/\/\d+px-/, `/${width}px-`)
+  }
+  const marker = '/wikipedia/commons/'
+  const tail = url.slice(url.indexOf(marker) + marker.length)
+  const parts = tail.split('/')
+  // Ожидается вид a/bc/Имя.ext — иначе формат незнакомый, не трогаем.
+  if (parts.length !== 3) return url
+  const file = parts[2]
+  // SVG превью отдаются как png, а для фотографий формат сохраняется.
+  return `${url.slice(0, url.indexOf(marker))}${marker}thumb/${tail}/${width}px-${file}`
+}

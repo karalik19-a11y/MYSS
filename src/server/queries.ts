@@ -1,3 +1,4 @@
+import { unstable_cache } from 'next/cache'
 import { Prisma } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 
@@ -95,7 +96,13 @@ export async function listPeople(params: PeopleQuery) {
   return { items, total, page, perPage }
 }
 
-export async function getPersonBySlug(slug: string) {
+/**
+ * Страница человека — самый тяжёлый запрос в приложении (курс, разделы,
+ * цитаты, кейсы, источники). Содержимое меняется только через админку,
+ * поэтому результат кэшируется и сбрасывается по тегу при публикации.
+ */
+export const getPersonBySlug = unstable_cache(
+  async function getPersonBySlug(slug: string) {
   return prisma.person.findFirst({
     where: { slug, ...PUBLISHED },
     include: {
@@ -121,11 +128,19 @@ export async function getPersonBySlug(slug: string) {
       sources: { orderBy: { title: 'asc' } },
     },
   })
-}
+  },
+  ['person'],
+  { revalidate: 300, tags: ['content'] },
+)
 
 export type PersonDetail = NonNullable<Awaited<ReturnType<typeof getPersonBySlug>>>
 
-export async function listCategories() {
+/**
+ * Категории и их счётчики меняются только при публикации контента, поэтому
+ * результат переиспользуется вместо запроса к базе на каждый показ страницы.
+ */
+export const listCategories = unstable_cache(
+  async function listCategories() {
   const categories = await prisma.category.findMany({
     orderBy: { sortOrder: 'asc' },
     include: {
@@ -139,7 +154,10 @@ export async function listCategories() {
     accent: c.accent,
     count: c._count.people,
   }))
-}
+  },
+  ['categories'],
+  { revalidate: 300, tags: ['content'] },
+)
 
 export async function randomPerson(excludeSlug?: string) {
   const where: Prisma.PersonWhereInput = { ...PUBLISHED }

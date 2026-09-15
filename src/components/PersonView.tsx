@@ -9,7 +9,7 @@ import { PersonCard } from './PersonCard'
 import { Reveal, SectionTitle } from './ui'
 import { IconArrow, IconCheck, IconSaved, IconShare, IconSource } from './Icons'
 import { api, haptic, tg } from '@/lib/telegram'
-import { CONFIDENCE_LABELS, lifespan, parseList, SOURCE_TYPE_LABELS } from '@/lib/content-utils'
+import { CONFIDENCE_LABELS, lifespan, parseList, SOURCE_TYPE_LABELS, wikiThumb } from '@/lib/content-utils'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 interface Props {
@@ -131,10 +131,11 @@ export function PersonView({ person, related }: Props) {
         <motion.div style={{ y, opacity: fade }} className="absolute inset-0">
           {person.imageUrl ? (
             <Image
-              src={person.imageUrl}
+              src={wikiThumb(person.imageUrl, 1280)!}
               alt={person.imageAlt ?? person.displayName}
               fill
               priority
+              fetchPriority="high"
               sizes="100vw"
               className="object-cover object-top"
             />

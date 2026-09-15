@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { haptic } from '@/lib/telegram'
+import { wikiThumb } from '@/lib/content-utils'
 
 export interface PersonCardData {
   slug: string
@@ -35,10 +36,11 @@ export function PersonCard({ person, priority = false }: { person: PersonCardDat
       <div className="relative aspect-[4/5] overflow-hidden bg-ink-800">
         {person.imageUrl ? (
           <Image
-            src={person.imageUrl}
+            src={wikiThumb(person.imageUrl, 640)!}
             alt={person.imageAlt ?? person.displayName}
             fill
             sizes="(max-width: 720px) 50vw, 240px"
+            loading={priority ? undefined : 'lazy'}
             priority={priority}
             className="object-cover object-top transition-transform duration-[900ms] ease-editorial group-hover:scale-[1.04]"
           />
@@ -94,7 +96,7 @@ export function PersonRow({
       <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-ink-800">
         {person.imageUrl ? (
           <Image
-            src={person.imageUrl}
+            src={wikiThumb(person.imageUrl, 160)!}
             alt={person.imageAlt ?? person.displayName}
             fill
             sizes="56px"

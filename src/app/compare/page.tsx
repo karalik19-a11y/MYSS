@@ -6,6 +6,7 @@ import { api, haptic } from '@/lib/telegram'
 import type { PersonCard as PersonCardType } from '@/server/queries'
 import { EmptyState, Skeleton } from '@/components/ui'
 import { IconCheck } from '@/components/Icons'
+import { wikiThumb } from '@/lib/content-utils'
 
 interface CompareData {
   people: Array<{ slug: string; displayName: string; role: string; imageUrl?: string | null; imageAlt?: string | null }>
@@ -71,10 +72,11 @@ export default function ComparePage() {
               <div className="relative aspect-[3/4] bg-ink-800">
                 {p.imageUrl && (
                   <Image
-                    src={p.imageUrl}
+                    src={wikiThumb(p.imageUrl, 240)!}
                     alt={p.imageAlt ?? p.displayName}
                     fill
                     sizes="92px"
+                    loading="lazy"
                     className="object-cover object-top"
                   />
                 )}
