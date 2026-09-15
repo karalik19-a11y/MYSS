@@ -3,6 +3,9 @@ databases:
     databaseName: myss
     plan: free
     postgresMajorVersion: "16"
+    # Регион обязан совпадать с регионом веб-сервиса: внутренний хост базы
+    # доступен только внутри своего региона, иначе подключение не проходит.
+    region: frankfurt
 
 services:
   - type: web

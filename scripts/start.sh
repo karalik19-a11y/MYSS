@@ -6,8 +6,24 @@
 
 set -e
 
+if [ -z "$DATABASE_URL" ]; then
+  echo "[start] ОШИБКА: не задана переменная DATABASE_URL"
+  exit 1
+fi
+
+# База может подниматься дольше веб-сервиса (особенно после простоя на
+# бесплатном плане), поэтому первые попытки подключения могут не пройти.
 echo "[start] применяю миграции"
-npx prisma migrate deploy
+attempt=1
+until npx prisma migrate deploy; do
+  if [ "$attempt" -ge 10 ]; then
+    echo "[start] ОШИБКА: база недоступна после $attempt попыток"
+    exit 1
+  fi
+  echo "[start] база недоступна, попытка $attempt из 10, жду 10 секунд"
+  attempt=$((attempt + 1))
+  sleep 10
+done
 
 # Seed идемпотентен: существующие записи обновляются, дубликаты не создаются.
 # Ошибка загрузки контента не должна ронять сервис — приложение поднимется
